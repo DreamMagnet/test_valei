@@ -1,0 +1,78 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "id": "app_main_main",
+      "label": "main()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "Community 0",
+      "file_type": "code",
+      "norm_label": "main()",
+      "source_file": "app/main.py",
+      "source_location": "L4"
+    },
+    {
+      "id": "app_main",
+      "label": "main.py",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "Community 0",
+      "file_type": "code",
+      "norm_label": "main.py",
+      "source_file": "app/main.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "app_main_rationale_1",
+      "label": "Application entry point.",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "Community 0",
+      "file_type": "rationale",
+      "norm_label": "application entry point.",
+      "source_file": "app/main.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "app_init",
+      "label": "__init__.py",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "Community 1",
+      "file_type": "code",
+      "norm_label": "__init__.py",
+      "source_file": "app/__init__.py",
+      "source_location": "L1"
+    }
+  ],
+  "links": [
+    {
+      "source": "app_main",
+      "target": "app_main_main",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app/main.py",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "app_main_rationale_1",
+      "target": "app_main",
+      "relation": "rationale_for",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app/main.py",
+      "source_location": "L1",
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [],
+  "built_at_commit": "6d68a3985401d76aca0325391aed53f94296086b"
+}
